@@ -31,7 +31,6 @@ sleep 5
 tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "INSTALANDO PACKSSH" ; tput sgr0
 echo -e "\033[1;34m INSTALANDO...\033[1;32m"
 
-apt-get update -y
 apt-get install bc 
 apt-get install nano -y
 apt-get install htop
@@ -117,7 +116,7 @@ chmod +x /bin/DadosMonitor
 wget https://raw.githubusercontent.com/dhtm15/script/master/ovinstall -O /bin/OpenVPN
 chmod +x /bin/OpenVPN
  
-wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/PackSSH -O /bin/menu
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/menu -O /bin/menu
 chmod +x /bin/menu
 
 rm -rf /etc/ssh/sshd_config
@@ -127,6 +126,12 @@ chmod +x squidconf
 ./squidconf
 wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/payloads -O /etc/payloads
 
+/etc/init.d/ssh restart
+service ssh restart
+
+/etc/init.d/squid3 restart
+service squid3 restart
+service squid restart
 clear
 
 
