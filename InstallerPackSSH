@@ -31,95 +31,110 @@ sleep 5
 tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "INSTALANDO PACKSSH" ; tput sgr0
 echo -e "\033[1;34m INSTALANDO...\033[1;32m"
 
-apt-get update
+apt-get update -y
 apt-get install bc 
-apt-get install nano
+apt-get install nano -y
 apt-get install htop
+apt-get install squid3 -y
 sudo apt-get install screenfetch -y
 rm .bashrc
 rm screenfetch-dev
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/.bashrc
-wget https://raw.githubusercontent.com/KittyKatt/screenFetch/master/screenfetch-dev
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/.bashrc
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/screenfetch-dev
 clear
 apt-get install python-pip -y
 pip install speedtest-cli
 apt-get install nethogs -y
 apt-get install nload
 iptables -F
-
+iptables -X
+iptables -t nat -F
+iptables -t nat -X
+iptables -t mangle -F
+iptables -t mangle -X
+iptables -P INPUT ACCEPT
+iptables -P FORWARD ACCEPT
+iptables -P OUTPUT ACCEPT
 
 clear
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/monitorcpu -O /bin/CpuMonitor
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/monitorcpu -O /bin/CpuMonitor
 chmod +x /bin/CpuMonitor
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/LimpadorCache -O /bin/ClearCache
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/LimpadorCache -O /bin/ClearCache
 chmod +x /bin/ClearCache
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/usermonitor -O /bin/UserMonitor
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/usermonitor -O /bin/UserMonitor
 chmod +x /bin/UserMonitor
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/OpenUdp -O /bin/OpenUDP
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/OpenUdp -O /bin/OpenUDP
 chmod +x /bin/OpenUDP
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/TesteConexao -O /bin/SpeedTest
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/TesteConexao -O /bin/SpeedTest
 chmod +x /bin/SpeedTest
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/Banner -O /bin/Banner
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/Banner -O /bin/Banner
 chmod +x /bin/Banner
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/UserBackup -O /bin/UserBackup
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/UserBackup -O /bin/UserBackup
 chmod +x /bin/UserBackup
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/UserCreate -O /bin/UserCreate
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/UserCreate -O /bin/UserCreate
 chmod +x /bin/UserCreate
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/UserClear -O /bin/UserClear
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/UserClear -O /bin/UserClear
 chmod +x /bin/UserClear
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/LimiterSSH -O /bin/LimiterSSH
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/LimiterSSH -O /bin/LimiterSSH
 chmod +x /bin/LimiterSSH
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/MonitorTotal -O /bin/MonitorTotal.sh
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/MonitorTotal -O /bin/MonitorTotal.sh
 chmod +x /bin/MonitorTotal.sh
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/MudarLimite -O /bin/MudarLimite
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/MudarLimite -O /bin/MudarLimite
 chmod +x /bin/MudarLimite
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/MudarSenha -O /bin/MudarSenha
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/MudarSenha -O /bin/MudarSenha
 chmod +x /bin/MudarSenha
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/ConfVps -O /bin/ConfVPS
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/ConfVps -O /bin/ConfVPS
 chmod +x /bin/ConfVPS
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/MudarValidade -O /bin/MudarValidade
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/MudarValidade -O /bin/MudarValidade
 chmod +x /bin/MudarValidade
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/VNC -O /bin/VNC
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/VNC -O /bin/VNC
 chmod +x /bin/VNC
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/UserDel -O /bin/UserDel
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/UserDel -O /bin/UserDel
 chmod +x /bin/UserDel
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/KernelControl -O /bin/KernelControl
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/KernelControl -O /bin/KernelControl
 chmod +x /bin/KernelControl
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/DadosMonitor -O /bin/DadosMonitor
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/DadosMonitor -O /bin/DadosMonitor
 chmod +x /bin/DadosMonitor
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/OpenVPN -O /bin/OpenVPN
+wget https://raw.githubusercontent.com/dhtm15/script/master/ovinstall -O /bin/OpenVPN
 chmod +x /bin/OpenVPN
  
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/PackSSH -O /bin/PackSSH
-chmod +x /bin/PackSSH
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/PackSSH -O /bin/menu
+chmod +x /bin/menu
+
+rm -rf /etc/ssh/sshd_config
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/sshd_config -O /etc/ssh/sshd_config
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/squidconf
+chmod +x squidconf
+./squidconf
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/payloads -O /etc/payloads
 
 clear
 
 
 
 
-tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "PackSSH" ; tput sgr0
+tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "menu" ; tput sgr0
 echo ""
-echo -e OBS:    Digite - PackSSH - para acessar esse PACK
+echo -e OBS:    Digite - menu - para acessar o PACK RNEOX PREMIUM
 echo -e "|01|\033[01;34m•====> ConfVPS (CONFIGURA A VPS|SQUID3|) \033[01;34m"
 echo -e "|02|\033[01;31m•====> UserCreate (Criar Usuarios SSH)\033[0m"
 echo -e "|03|\033[01;31m•====> UserBackup (Gerencia Backup dos Usuarios SSH)\033[0m"
@@ -128,19 +143,20 @@ echo -e "|05|\033[01;31m•====> UserMonitor (Monitora os Usuarios Conectados)\0
 echo -e "|06|\033[01;31m•====> DadosMonitor (Monitora o Uso de Dados/Banda|in||out|)\033[0m"
 echo -e "|07|\033[01;31m•====> VNC (Ativa a Interface Gráfica no Servidor)\033[0m"
 echo -e "|08|\033[01;31m•====> ClearCache (Limpa Cache e Swap da Maquina)\033[0m"
-echo -e "|09|\033[01;31m•====> OpenUDP (Libera a Porta UDP para Ligacão e Jogos)\033[0m"
+echo -e "|09|\033[01;31m•====> OpenUDP (Libera Porta UDP p/ Ligacão e Jogos no HTTP)\033[0m"
 echo -e "|10|\033[01;31m•====> SpeedTest (Testa a Velocidade de Link do Servidor)\033[0m"
 echo -e "|11|\033[01;31m•====> Banner (Mensagem para Usuario Quando Conectar)\033[0m"
 echo -e "|12|\033[01;31m•====> LimiterSSH (Limita as Conexoes de Cada Usuario)\033[0m"
 echo -e "|13|\033[01;31m•====> MudarLimite (Muda o Limite do Usuario)\033[0m"
 echo -e "|14|\033[01;31m•====> MudarSenha (Muda a Senha do Usuario)\033[0m"
 echo -e "|15|\033[01;31m•====> MudarValidade (Muda a Data de Validade do Usuario)\033[0m"
-echo -e "|16|\033[01;31m•====> UserDel (Deleta Usuario)\033[0m"
+echo -e "|16|\033[01;31m•====> DeletarUsuario (Deleta Usuario)\033[0m"
 echo -e "|17|\033[01;31m•====> addhost (Adiciona Novo Host ao Squid)\033[0m"
 echo -e "|18|\033[01;31m•====> OpenVPN (Configura e Gerencia Usuarios .ovpn)\033[0m"
-echo -e "|19|\033[01;31m•====> UserClear (Limpa Usuarios Vencidos)\033[0m"
+echo -e "|19|\033[01;31m•====> LimparVencidos (Limpa Usuarios Vencidos)\033[0m"
 echo -e "|20|\033[01;31m•====> KernelControl (Procura ATT para Kernel ou Remove)\033[0m"
 echo -e "|21|\033[01;31m•====> SSHMonitor (Monitor Total de Usuarios Conectados)\033[0m"
+echo -e "|22|\033[01;31m•====> VPNMonitor (Monitora os Usuarios Conectados VPN)\033[0m"
 echo""
 echo""
 read -p " Selecione a opção [01-21]: " opcao
@@ -149,15 +165,15 @@ case $opcao in
  01)
   ConfVPS
   sleep 4
-  PackSSH;;
+  menu;;
  02)
   UserCreate
   sleep 5
-  PackSSH;;
+  menu;;
  03)
   UserBackup
   sleep 5
-  PackSSH;;
+  menu;;
  04)
   CpuMonitor;;
  05)
@@ -167,57 +183,57 @@ case $opcao in
  07)
   VNC
   sleep 8
-  PackSSH;;
+  menu;;
  08)
   ClearCache
   sleep 4
-  PackSSH;;
+  menu;;
  09)
   OpenUDP;;
  10)
   SpeedTest
   sleep 8
-  PackSSH;;
+  menu;;
  11)
   Banner
   sleep 4
-  PackSSH;;
+  menu;;
  12)
   LimiterSSH;;
  13)
   MudarLimite
   sleep 4
-  PackSSH;;
+  menu;;
  14)
   MudarSenha
   sleep 4
-  PackSSH;;
+  menu;;
  15)
   MudarValidade
   sleep 5
-  PackSSH;;
+  menu;;
  16)
   UserDel
   sleep 4
-  PackSSH;;
+  menu;;
  17)
   addhost
   sleep 4
-  PackSSH;;
+  menu;;
  18)
   OpenVPN
   sleep 5
-  PackSSH;;
+  menu;;
  19)
   UserClear
   sleep 3
-  PackSSH;;
+  menu;;
  20)
   KernelControl
   sleep 2
-  PackSSH;;
+  menu;;
  21)
   MonitorTotal.sh
   sleep 20
-  PackSSH;;
+  menu;;
 esac
