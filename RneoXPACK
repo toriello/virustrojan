@@ -140,7 +140,8 @@ clear
 tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "menu" ; tput sgr0
 echo ""
 echo -e OBS:    Digite - menu - para acessar o PACK RNEOX PREMIUM
-echo -e "|01|\033[01;34m•====> ConfVPS (CONFIGURA A VPS|SQUID3|) \033[01;34m"
+echo -e "|01|\033[01;34m•====> Instala OPENVPN 443 e SSH 22\033[01;34m"
+echo -e "|01|\033[01;34m•====> Instala SSH 443 e 22 E OPENVPN 8090\033[01;34m"
 echo -e "|02|\033[01;31m•====> UserCreate (Criar Usuarios SSH)\033[0m"
 echo -e "|03|\033[01;31m•====> UserBackup (Gerencia Backup dos Usuarios SSH)\033[0m"
 echo -e "|04|\033[01;31m•====> CpuMonitor (Monitora o Uso da CPU, RAM e UPTIME)\033[0m"
@@ -164,9 +165,13 @@ echo -e "|21|\033[01;31m•====> SSHMonitor (Monitor Total de Usuarios Conectado
 echo -e "|22|\033[01;31m•====> VPNMonitor (Monitora os Usuarios Conectados VPN)\033[0m"
 echo""
 echo""
-read -p " Selecione a opção [01-21]: " opcao
+read -p " Selecione a opção [00-22]: " opcao
 
 case $opcao in
+ 00)
+  ConfVPN
+  sleep 4
+  menu;;
  01)
   ConfVPS
   sleep 4
