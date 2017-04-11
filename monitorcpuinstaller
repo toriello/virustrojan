@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "INSTALANDO MONITOR CPU..."
+sleep 2
+apt-get install htop -y
+clear
+wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/monitorcpu -O /bin/monitorcpu
+chmod +x /bin/monitorcpu
