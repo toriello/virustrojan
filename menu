@@ -19,10 +19,10 @@ cyanClaro="\033[1;36m"
 branco="\033[1;37m"
 
 
-tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "PackSSH" ; tput sgr0
+tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "menu" ; tput sgr0
 echo ""
-echo -e OBS:    Digite - PackSSH - para acessar esse PACK
-echo -e "|01|\033[01;34m•====> ConfVPS (CONFIGURA A VPS|SQUID3|) \033[01;34m"
+echo -e OBS:    Digite - menu - para acessar esse PACK
+echo -e "|01|\033[01;34m•====> ConfigurarSSH (CONFIGURA A VPS|SQUID3|) \033[01;34m"
 echo -e "|02|\033[01;31m•====> UserCreate (Criar Usuarios SSH)\033[0m"
 echo -e "|03|\033[01;31m•====> UserBackup (Gerencia Backup dos Usuarios SSH)\033[0m"
 echo -e "|04|\033[01;31m•====> CpuMonitor (Monitora o Uso da CPU, RAM e UPTIME)\033[0m"
