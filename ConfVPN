@@ -1,0 +1,31 @@
+#/bin/bash
+clear
+if [ $(id -u) -eq 0 ]
+then
+	clear
+else
+	if echo $(id) |grep sudo > /dev/null
+	then
+	clear
+	echo -e "\033[1;37mVoce não é root"
+	echo -e "\033[1;37mSeu usuario esta no grupo sudo"
+	echo -e "\033[1;37mPara virar root execute \033[1;31msudo su\033[1;37m ou execute \033[1;31msudo $0\033[0m"
+	exit
+	else
+	clear
+	echo -e "Vc nao esta como usuario root, nem com seus direitos (sudo)\nPara virar root execute \033[1;31msu\033[0m e digite sua senha root"
+	exit
+	fi
+fi
+
+/etc/init.d/openvpn stop
+service openvpn stop
+rm -rf /etc/ssh/sshd_config
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/sshd_config -O /etc/ssh/sshd_config
+rm -rf /etc/openvpn/server.conf
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/server.conf -O /etc/openvpn/server.conf
+/etc/init.d/openvpn restart
+service openvpn restart
+/etc/init.d/ssh restart
+service ssh restart
+clear
