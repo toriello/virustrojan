@@ -439,3 +439,7 @@ sed -i '$ i\iptables -A FORWARD -p tcp --dport 110 -j DROP' /etc/rc.local
 
 rm -rf /etc/ssh/sshd_config
 wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/sshd_config -O /etc/ssh/sshd_config
+/etc/init.d/ssh restart
+service ssh restart
+/etc/init.d/openvpn restart
+service openvpn restart
