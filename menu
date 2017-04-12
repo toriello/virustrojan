@@ -18,8 +18,7 @@ purpleClaro="\033[1;35m"
 cyanClaro="\033[1;36m"
 branco="\033[1;37m"
 
-
-tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "____MENU OPENVPN E SSH RNEOX PREMIUM____" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%30s%s%-10s\n' "____MENU OPENVPN E SSH RNEOX PREMIUM____" ; tput sgr0
 echo ""
 echo -e OBS: Digite - menu - para acessar o PACK RNEOX PREMIUM
 echo -e "\033[0;32m| 0|• Muda porta do OPENVPN 443 e SSH 22\033[0;32m"
