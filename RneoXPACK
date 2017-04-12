@@ -18,9 +18,9 @@ purpleClaro="\033[1;35m"
 cyanClaro="\033[1;36m"
 branco="\033[1;37m"
 
-
 echo "______VOCÊ ESTÁ UTILIZANDO OS SCRIPTS PREMIUM DO RNEOX!______"
-
+echo "______VOCÊ ESTÁ UTILIZANDO OS SCRIPTS PREMIUM DO RNEOX!______"
+echo "______VOCÊ ESTÁ UTILIZANDO OS SCRIPTS PREMIUM DO RNEOX!______"
 
 sleep 5
 
