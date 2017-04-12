@@ -120,7 +120,7 @@ wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/menu -O /bin/me
 chmod +x /bin/menu
 
 rm -rf /etc/ssh/sshd_config
-wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/sshd_config -O /etc/ssh/sshd_config
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/sshd_config2 -O /etc/ssh/sshd_config
 wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/squidconf
 chmod +x squidconf
 ./squidconf
@@ -140,7 +140,7 @@ clear
 tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "menu" ; tput sgr0
 echo ""
 echo -e OBS:    Digite - menu - para acessar o PACK RNEOX PREMIUM
-echo -e "|01|\033[01;34m•====> Instala OPENVPN 443 e SSH 22\033[01;34m"
+echo -e "|00|\033[01;34m•====> Instala OPENVPN 443 e SSH 22\033[01;34m"
 echo -e "|01|\033[01;34m•====> Instala SSH 443 e 22 E OPENVPN 8090\033[01;34m"
 echo -e "|02|\033[01;31m•====> UserCreate (Criar Usuarios SSH)\033[0m"
 echo -e "|03|\033[01;31m•====> UserBackup (Gerencia Backup dos Usuarios SSH)\033[0m"
@@ -162,7 +162,7 @@ echo -e "|18|\033[01;31m•====> OpenVPN (Configura e Gerencia Usuarios .ovpn)\0
 echo -e "|19|\033[01;31m•====> LimparVencidos (Limpa Usuarios Vencidos)\033[0m"
 echo -e "|20|\033[01;31m•====> KernelControl (Procura ATT para Kernel ou Remove)\033[0m"
 echo -e "|21|\033[01;31m•====> SSHMonitor (Monitor Total de Usuarios Conectados)\033[0m"
-echo -e "|22|\033[01;31m•====> VPNMonitor (Monitora os Usuarios Conectados VPN)\033[0m"
+echo -e "|22|\033[01;31m•====> VPNMonitor (Monitora os Usuarios Conectados no VPN)\033[0m"
 echo""
 echo""
 read -p " Selecione a opção [00-22]: " opcao
@@ -244,6 +244,10 @@ case $opcao in
   menu;;
  21)
   MonitorTotal.sh
+  sleep 20
+  menu;;
+ 22)
+  statusvpn
   sleep 20
   menu;;
 esac
