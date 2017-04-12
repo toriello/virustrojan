@@ -49,7 +49,7 @@ echo -e "|23|\033[01;31m• Reboot (Reinicia o servidor)\033[0m"
 echo -e "|24|\033[01;31m• ReiniciarServicos (SSH, VPN e ProxySquid)\033[0m"
 echo -e Segure CTRL + C para fechar o menu
 echo""
-read -p " Selecione a opção [0-22]: " opcao
+read -p " Selecione a opção [0-24]: " opcao
 
 case $opcao in
  0)
