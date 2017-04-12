@@ -135,6 +135,7 @@ case $opcao in
   sleep 7
   menu;;
  23)
+ echo -e Reiniciando o servidor aguarde...
   reboot;;
  24)
   restservice
