@@ -137,15 +137,15 @@ tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "menu" ; tput s
 echo ""
 echo -e OBS:    Digite - menu - para acessar o PACK RNEOX PREMIUM
 echo -e "\033[0;32m|00|• Muda porta do OPENVPN 443 e SSH 22\033[0;32m"
-echo -e "|01|\033[0;32m• Muda porta do SSH 443 e 22 E OPENVPN 8090\033[0m"
-echo -e "|02|\033[01;31m• UserCreate (Criar Usuarios SSH)\033[0m"
-echo -e "|03|\033[01;31m• UserBackup (Gerencia Backup dos Usuarios SSH)\033[0m"
-echo -e "|04|\033[01;31m• CpuMonitor (Monitora o Uso da CPU, RAM e UPTIME)\033[0m"
-echo -e "|05|\033[01;31m• UserMonitor (Monitora os Usuarios Conectados)\033[0m"
-echo -e "|06|\033[01;31m• DadosMonitor (Monitora o Uso de Dados/Banda|in||out|)\033[0m"
-echo -e "|07|\033[01;31m• VNC (Ativa a Interface Gráfica no Servidor)\033[0m"
-echo -e "|08|\033[01;31m• ClearCache (Limpa Cache e Swap da Maquina)\033[0m"
-echo -e "|09|\033[01;31m• OpenUDP (Libera Porta UDP p/ Ligacão e Jogos no HTTP)\033[0m"
+echo -e "| 1|\033[0;32m• Muda porta do SSH 443 e 22 E OPENVPN 8090\033[0m"
+echo -e "| 2|\033[01;31m• UserCreate (Criar Usuarios SSH)\033[0m"
+echo -e "| 3|\033[01;31m• UserBackup (Gerencia Backup dos Usuarios SSH)\033[0m"
+echo -e "| 4|\033[01;31m• CpuMonitor (Monitora o Uso da CPU, RAM e UPTIME)\033[0m"
+echo -e "| 5|\033[01;31m• UserMonitor (Monitora os Usuarios Conectados)\033[0m"
+echo -e "| 6|\033[01;31m• DadosMonitor (Monitora o Uso de Dados/Banda|in||out|)\033[0m"
+echo -e "| 7|\033[01;31m• VNC (Ativa a Interface Gráfica no Servidor)\033[0m"
+echo -e "| 8|\033[01;31m• ClearCache (Limpa Cache e Swap da Maquina)\033[0m"
+echo -e "| 9|\033[01;31m• OpenUDP (Libera Porta UDP p/ Ligacão e Jogos no HTTP)\033[0m"
 echo -e "|10|\033[01;31m• SpeedTest (Testa a Velocidade de Link do Servidor)\033[0m"
 echo -e "|11|\033[01;31m• Banner (Mensagem para Usuario Quando Conectar)\033[0m"
 echo -e "|12|\033[01;31m• LimiterSSH (Limita as Conexoes de Cada Usuario)\033[0m"
@@ -164,37 +164,37 @@ echo""
 read -p " Selecione a opção [00-22]: " opcao
 
 case $opcao in
- 00)
+ 0)
   ConfVPN
   sleep 4
   menu;;
- 01)
+ 1)
   ConfVPS
   sleep 4
   menu;;
- 02)
+ 2)
   UserCreate
   sleep 5
   menu;;
- 03)
+ 3)
   UserBackup
   sleep 5
   menu;;
- 04)
+ 4)
   CpuMonitor;;
- 05)
+ 5)
   UserMonitor;;
- 06)
+ 6)
   DadosMonitor;;
- 07)
+ 7)
   VNC
   sleep 8
   menu;;
- 08)
+ 8)
   ClearCache
   sleep 4
   menu;;
- 09)
+ 9)
   OpenUDP;;
  10)
   SpeedTest
