@@ -1,0 +1,10 @@
+#/bin/bash
+/etc/init.d/openvpn restart
+/etc/init.d/ssh restart
+/etc/init.d/squid restart
+/etc/init.d/squid3 restart
+service openvpn restart
+service ssh restart
+service squid restart
+service squid3 restart
+clear
