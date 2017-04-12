@@ -22,8 +22,8 @@ branco="\033[1;37m"
 tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "menu" ; tput sgr0
 echo ""
 echo -e OBS:    Digite - menu - para acessar o PACK RNEOX PREMIUM
-echo -e "|00|\033[01;34m•====> Instala OPENVPN 443 e SSH 22\033[01;34m"
-echo -e "|01|\033[01;34m•====> Instala SSH 443 e 22 E OPENVPN 8090\033[01;34m"
+echo -e "|00|\033[01;34m•====> Muda porta do OPENVPN 443 e SSH 22\033[01;34m"
+echo -e "|01|\033[01;34m•====> Muda porta do SSH 443 e 22 E OPENVPN 8090\033[01;34m"
 echo -e "|02|\033[01;31m•====> UserCreate (Criar Usuarios SSH)\033[0m"
 echo -e "|03|\033[01;31m•====> UserBackup (Gerencia Backup dos Usuarios SSH)\033[0m"
 echo -e "|04|\033[01;31m•====> CpuMonitor (Monitora o Uso da CPU, RAM e UPTIME)\033[0m"
