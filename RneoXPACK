@@ -24,7 +24,7 @@ echo "(_)\_)(_)\_)(____)(_____)(_/\_)(__)  (__)(__) \___)(_)\_)"
 
 sleep 5
 
-tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "INSTALANDO PACKSSH" ; tput sgr0
+tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "INSTALANDO RNEOXPACK" ; tput sgr0
 echo -e "\033[1;34m INSTALANDO...\033[1;32m"
 
 apt-get install bc 
