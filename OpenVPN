@@ -207,7 +207,7 @@ else
 	esac
 	echo ""
 	echo "Qual porta você deseja usar ?"
-	read -p "Port: " -e -i 443 PORT
+	read -p "Port: " -e -i 8090 PORT
 	echo ""
 	echo "Qual DNS você deseja usar ?"
 	echo "   1) Sistema(Não Recomendado)"
@@ -413,7 +413,7 @@ persist-key
 persist-tun
 remote-cert-tls server
 cipher AES-256-CBC
-comp-lzo yes
+comp-lzo
 setenv opt block-outside-dns
 key-direction 1
 verb 3
