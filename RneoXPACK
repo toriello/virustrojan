@@ -94,6 +94,9 @@ chmod +x /bin/MudarSenha
 wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/ConfVps -O /bin/ConfVPS
 chmod +x /bin/ConfVPS
 
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/ConfVPN -O /bin/ConfVPN
+chmod +x /bin/ConfVPN
+
 wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/MudarValidade -O /bin/MudarValidade
 chmod +x /bin/MudarValidade
 
