@@ -31,7 +31,8 @@ apt-get install bc
 apt-get install nano -y
 apt-get install htop
 apt-get install squid3 -y
-sudo apt-get install screenfetch -y
+apt-get install screen -y
+apt-get install screenfetch -y
 rm .bashrc
 rm screenfetch-dev
 wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/.bashrc
@@ -46,7 +47,15 @@ apt-get -y --purge remove apache2*;
 apt-get -y --purge remove sendmail*;
 #apt-get -y --purge remove bind9*;
 echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
+echo 1 > /proc/sys/net/ipv4/ip_forward
+sed -i '$ i\echo 1 > /proc/sys/net/ipv4/ip_forward' /etc/rc.local
 sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
+sed -i '$ i\iptables -A INPUT -p tcp --dport 25 -j DROP' /etc/rc.local
+sed -i '$ i\iptables -A INPUT -p tcp --dport 110 -j DROP' /etc/rc.local
+sed -i '$ i\iptables -A OUTPUT -p tcp --dport 25 -j DROP' /etc/rc.local
+sed -i '$ i\iptables -A OUTPUT -p tcp --dport 110 -j DROP' /etc/rc.local
+sed -i '$ i\iptables -A FORWARD -p tcp --dport 25 -j DROP' /etc/rc.local
+sed -i '$ i\iptables -A FORWARD -p tcp --dport 110 -j DROP' /etc/rc.local
 iptables -F
 iptables -X
 iptables -t nat -F
