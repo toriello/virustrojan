@@ -55,12 +55,13 @@ if [[ "$resposta" = 's' ]]; then
 	tput setaf 3 ; tput bold ; echo ""
 	echo ""
 	echo "BadVPN instalado com sucesso."
-	echo "Para usar, crie uma sessão screen"
-	echo "E execute o comando:"
+	echo "O BadVPN já vem executado em segundo plano"
+	echo "Configure corretamente seu http injector mudando a porta de"
+	echo "1080 para 7300 e desativando o encaminhamento de porta UDP"
+	echo "Scripted by RneoX Automatizado!"
 	echo ""
-	echo "badudp"
-	echo ""
-	echo "E deixe a sessÃ£o screen rodando em segundo plano."
+	echo "escreva: ps ax"
+	echo "para ver se o badvpn está sendo executado: 127.0.0.1:7300"
 	echo "" ; tput sgr0
 	exit
 else 
