@@ -42,7 +42,7 @@ echo -e Segure CTRL + X para fechar as edicoes.
 echo -e Segure CTRL + C para fechar logs.
 echo -e Escreva menu para voltar ao menu de gerenciamento.
 echo""
-read -p " Selecione a opção [0-24]: " opcao
+read -p " Selecione a opção [0-16]: " opcao
 
 case $opcao in
  0)
