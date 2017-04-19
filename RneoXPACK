@@ -139,6 +139,9 @@ chmod +x /bin/restservice
 wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/menu -O /bin/menu
 chmod +x /bin/menu
 
+wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/menudev -O /bin/menudev
+chmod +x /bin/menudev
+
 rm -rf /etc/ssh/sshd_config
 wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/sshd_config2 -O /etc/ssh/sshd_config
 wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/squidconf
