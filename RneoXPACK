@@ -169,7 +169,7 @@ cyanClaro="\033[1;36m"
 branco="\033[1;37m"
 
 
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%30s%s%-10s' "MENU OPENVPN E SSH RNEOX PREMIUM" ;$
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%30s%s%-10s' "MENU OPENVPN E SSH RNEOX PREMIUM" ;
 
 echo ""
 echo ""
