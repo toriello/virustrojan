@@ -12,11 +12,11 @@ topology subnet
 server 10.8.0.0 255.255.255.0
 ifconfig-pool-persist ipp.txt
 push "redirect-gateway def1 bypass-dhcp"
-push "dhcp-option DNS 189.38.95.95"
-push "dhcp-option DNS 216.146.36.36"
+push "dhcp-option DNS 8.8.8.8"
+push "dhcp-option DNS 8.8.4.4"
 keepalive 10 20
 float
-cipher AES-256-CBC
+cipher AES-128-CBC
 comp-lzo yes
 user nobody
 group nogroup
