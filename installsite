@@ -14,7 +14,7 @@ apt-get install libssh2-1-dev libssh2-php
 php -m |grep ssh2
 service apache2 restart
 cd /var/www/html
-wget 144.217.105.145/painel30/painelssh.zip
+wget rneox.esy.es/painelssh.zip
 apt-get install unzip
 unzip painelssh.zip
 rm painelssh.zip index.html
