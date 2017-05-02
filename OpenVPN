@@ -183,7 +183,7 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 	done
 else
 	clear
-	echo 'Bem vindo ao instalador OpenVPN "@Guilhermevps" installer'
+	echo 'Bem vindo ao instalador OpenVPN "@dhtm15" installer'
 	echo ""
 	# OpenVPN instalador e criação do primeiro usuario
 	echo "Responda as perguntas para iniciar a instalação"
