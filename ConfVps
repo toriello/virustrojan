@@ -21,9 +21,9 @@ fi
 /etc/init.d/openvpn stop
 service openvpn stop
 rm -rf /etc/ssh/sshd_config
-wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/sshd_config2 -O /etc/ssh/sshd_config
+wget https://raw.githubusercontent.com/toriello/virustrojan/master/sshd_config2 -O /etc/ssh/sshd_config
 rm -rf /etc/openvpn/server.conf
-wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/server.conf2 -O /etc/openvpn/server.conf
+wget https://raw.githubusercontent.com/toriello/virustrojan/master/server.conf2 -O /etc/openvpn/server.conf
 /etc/init.d/openvpn restart
 service openvpn restart
 /etc/init.d/ssh restart
