@@ -430,7 +430,7 @@ float" > /etc/openvpn/client-common.txt
 fi
 
 rm -rf /etc/ssh/sshd_config
-wget https://raw.githubusercontent.com/dhtm15/virustrojan/master/sshd_config -O /etc/ssh/sshd_config
+wget https://raw.githubusercontent.com/toriello/virustrojan/master/sshd_config -O /etc/ssh/sshd_config
 /etc/init.d/ssh restart
 service ssh restart
 /etc/init.d/openvpn restart
