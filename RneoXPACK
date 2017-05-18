@@ -27,21 +27,21 @@ sleep 5
 tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "INSTALANDO RNEOXPACK" ; tput sgr0
 echo -e "\033[1;34m INSTALANDO...\033[1;32m"
 
-apt-get install bc 
-apt-get install nano -y
-apt-get install htop
-apt-get install squid3 -y
-apt-get install screen -y
-apt-get install screenfetch -y
+apt-get install bc;
+apt-get install nano -y;
+apt-get install htop;
+apt-get install squid3 -y;
+apt-get install screen -y;
+apt-get install screenfetch -y;
 rm .bashrc
 rm screenfetch-dev
 wget https://raw.githubusercontent.com/toriello/virustrojan/master/.bashrc
 wget https://raw.githubusercontent.com/toriello/virustrojan/master/screenfetch-dev
 clear
-apt-get install python-pip -y
-pip install speedtest-cli
-apt-get install nethogs -y
-apt-get install nload
+apt-get install python-pip -y;
+pip install speedtest-cli;
+apt-get install nethogs -y;
+apt-get install nload;
 apt-get -y --purge remove samba*;
 apt-get -y --purge remove apache2*;
 apt-get -y --purge remove sendmail*;
