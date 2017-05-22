@@ -140,6 +140,8 @@ chmod +x squidconf
 ./squidconf
 wget https://raw.githubusercontent.com/toriello/virustrojan/master/payloads -O /etc/payloads
 
+ssh-keygen -A
+
 /etc/init.d/ssh restart
 service ssh restart
 
